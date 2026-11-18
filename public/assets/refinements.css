@@ -56,3 +56,27 @@
     display: none;
   }
 }
+
+.atlas-select {
+  max-width: 100%;
+  color-scheme: dark;
+}
+
+.atlas-amenities {
+  position: relative;
+}
+
+.atlas-amenity-options {
+  position: absolute;
+  z-index: 30;
+  inset-inline-start: 0;
+  min-width: 13rem;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 35%);
+}
+
+@media (max-width: 640px) {
+  .atlas-amenity-options {
+    position: static;
+    box-shadow: none;
+  }
+}
