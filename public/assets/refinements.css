@@ -1,0 +1,58 @@
+.skip-link {
+  position: fixed;
+  z-index: 1000;
+  inset: 1rem auto auto 1rem;
+  transform: translateY(calc(-100% - 1rem));
+  padding: .75rem 1rem;
+  border-radius: .35rem;
+  background: #f3edda;
+  color: #20261e;
+}
+
+.skip-link:focus {
+  transform: none;
+}
+
+:where(a, button, input, select, textarea):focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+#atlas-main {
+  scroll-margin-top: 5rem;
+}
+
+.atlas-hero-video {
+  position: absolute;
+  inset: 0;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 70% center;
+  pointer-events: none;
+}
+
+.atlas-motion-toggle {
+  position: absolute;
+  inset: auto 1rem 1rem auto;
+  z-index: 1;
+  min-height: 44px;
+  padding: .4rem .75rem;
+  border: 1px solid #e1d9bb80;
+  border-radius: .5rem;
+  background: #121611e8;
+  color: #f3edda;
+  font-size: .75rem;
+}
+
+.atlas-motion-toggle:hover {
+  background: #252e24;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .atlas-hero-video,
+  .atlas-motion-toggle {
+    display: none;
+  }
+}

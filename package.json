@@ -1,0 +1,10 @@
+{
+  "name": "sacred-atlas",
+  "private": true,
+  "scripts": {
+    "start": "node server.cjs"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
